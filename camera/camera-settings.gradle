@@ -1,0 +1,11 @@
+def rootDir = settingsDir
+def modulePrefix = ':'
+
+include modulePrefix + 'camera-api'
+project(modulePrefix + 'camera-api').projectDir = new File(rootDir, 'camera/api')
+
+include modulePrefix + 'camera-impl'
+project(modulePrefix + 'camera-impl').projectDir = new File(rootDir, 'camera/impl')
+
+include modulePrefix + 'camera-wiring-impl'
+project(modulePrefix + 'camera-wiring-impl').projectDir = new File(rootDir, 'camera/wiring-impl')
