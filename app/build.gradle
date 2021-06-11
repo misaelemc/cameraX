@@ -38,8 +38,7 @@ android {
 }
 
 dependencies {
-    implementation project(':core')
-    implementation project(':camera-wiring-impl')
+    implementation project(':camera-lib')
 
     implementation "androidx.core:core-ktx:$rootProject.ext.ktxVersion"
     implementation "androidx.appcompat:appcompat:$rootProject.ext.appCompatVersion"
@@ -50,12 +49,6 @@ dependencies {
     implementation "androidx.camera:camera-view:$rootProject.ext.cameraxViewVersion"
     implementation "androidx.camera:camera-camera2:$rootProject.ext.cameraxVersion"
     implementation "androidx.camera:camera-lifecycle:$rootProject.ext.cameraxVersion"
-
-    // Dagger
-    implementation "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
-    implementation "com.google.dagger:dagger-android-support:$rootProject.ext.daggerAndroidVersion"
-    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
-    kapt "com.google.dagger:dagger-android-processor:$rootProject.ext.daggerVersion"
 
     // Glide
     implementation "com.github.bumptech.glide:glide:$rootProject.ext.glideVersion"

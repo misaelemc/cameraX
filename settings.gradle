@@ -8,5 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "camerax"
 include ':app'
-apply from: 'camera/camera-settings.gradle'
-include ':core'
+include ':camera-lib'

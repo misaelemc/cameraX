@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_lib_name">Cámara</string>
+    <string name="camera_lib_photo_text">Foto</string>
+    <string name="camera_lib_video">Video</string>
+    <string name="camera_lib_discard">Descartar</string>
+    <string name="camera_lib_accept">Aceptar</string>
+</resources>
