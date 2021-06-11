@@ -1,22 +1,18 @@
 package com.mmunoz.camerax
 
 import android.os.Bundle
-import android.view.KeyEvent
 import android.view.MotionEvent
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.mmunoz.camera.api.ui.loader.CameraFragmentLoader
-import dagger.android.support.DaggerAppCompatActivity
-import javax.inject.Inject
+import com.mmunoz.camera_lib.ui.fragments.CameraFragment
 
-class MainActivity : DaggerAppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
-    @Inject
-    lateinit var cameraFragmentLoader: CameraFragmentLoader
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        addToStack(cameraFragmentLoader.getFragment())
+        addToStack(CameraFragment.newInstance())
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {

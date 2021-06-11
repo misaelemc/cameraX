@@ -13,10 +13,6 @@ ext {
     cameraxVersion = "1.1.0-alpha04"
     cameraxViewVersion = "1.0.0-alpha24"
 
-    // Dagger
-    daggerVersion = '2.35'
-    daggerAndroidVersion = '2.35'
-
     // Glide
     glideVersion = "4.11.0"
     glideTransformationVersion = "4.3.0"
